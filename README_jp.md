@@ -45,7 +45,7 @@
 <br>
 
 ## 🔗 リンク
-- [プレイ動画](https://youtu.be/Bd5a8q8uKjs)
+- [プレイ動画](https://youtu.be/gsoqlDl95ws)
 
 <br>
 
