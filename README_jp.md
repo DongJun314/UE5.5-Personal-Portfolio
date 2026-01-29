@@ -16,8 +16,8 @@
 ## 🌟 ハイライト
 <table>
   <tr>
-    <th style="text-align:center">인벤토리</th>
-    <th style="text-align:center">몬스터 박스</th>
+    <th style="text-align:center">UIシステム</th>
+    <th style="text-align:center">アニメーションシステム</th>
   </tr>
   <tr>
     <td style="text-align:center">
@@ -28,8 +28,8 @@
     </td>
   </tr>
   <tr>
-    <th style="text-align:center">아이템 박스</th>
-    <th style="text-align:center">맵툴</th>
+    <th style="text-align:center">AIシステム</th>
+    <th style="text-align:center">入力システム</th>
   </tr>
   <tr>
     <td style="text-align:center">
@@ -65,20 +65,17 @@
 <br>
 
 ## ⚒️ 実装内容
-- **UI システム**：プレイヤーおよびモンスターの HP / MP 表示、戦闘状況に応じた HUD 切り替え、デリゲートとインターフェースを用いた疎結合な UI 構造を設計・実装。
+- **UIシステム**：
+  プレイヤー・モンスターのHP/MP表示および戦闘状況に応じたHUD切り替えを実装。
+- **アニメーションシステム**：
+  Animation MontageとAnim Notifyを用いた基本的な攻撃制御と移動アニメーションを実装。
+- **AIシステム**：
+  Behavior Tree / Blackboardを用いた巡回・追跡・攻撃AIを構築。
+- **入力システム**：
+  Enhanced Inputを用いて移動・アクション・視点切り替えを制御。
+- **データテーブル管理**：
+  CSVベースのDataTableによるステータス管理構造を実装。
 
-- **アニメーションシステム**：  
-  Animation Montage を用いたコンボ攻撃、Anim Notify による攻撃判定制御、  
-  BlendSpace・State Machine を活用した滑らかな移動表現を実装。
-
-- **AI システム**：Behavior Tree / Blackboard を用いた巡回・追跡・攻撃 AI を構築し、行動分岐を設計。
-
-- **入力システム**：  
-  Enhanced Input を利用し、アクション・移動・視点切り替えを柔軟に制御。
-
-- **データテーブル管理**：  
-  CSV ベースの DataTable を用いたステータス管理構造を設計し、  
-  レベル依存データをコードから分離。
 
 <br>
 
