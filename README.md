@@ -1,64 +1,75 @@
-<h1 align="center">🕹️ Unreal Engine 5.5 Personal Portfolio </h1>
+<h1 align="center">🕹️ Unreal Engine 5 個人ポートフォリオ – アクションゲーム クライアントデモ</h1>
 <p align="center">
-   DirectX 11의 다양한 기능을 습득하고, 맵 제작에 대한 이해도와 구현력을 향상시키는 것을 목표로 했습니다. <br>
-   "팰월드" 생존 서바이벌 장르의 자유도와 복잡성에 맞춰 다양한 기술적 도전을 경험하고자 선정했습니다. 
+  本プロジェクトは、<strong>Unreal Engine 5</strong> を用いた <strong>実践的なクライアント開発経験</strong> を通じて、<br>
+  <strong>UI・アニメーション・AI・データ駆動設計</strong> への理解を深めることを目的として制作しました。<br>
+  実際のゲーム開発現場を想定し、<strong>アクション性の高い戦闘システム</strong> を中心に、<br>
+  システム設計から実装までを個人で行っています。
 </p>
 
-<br>
+<p align="center">
+  <a href="./README.md">English</a> |
+  <a href="./README_jp.md">日本語</a>
+</p>
 
-## 🌟 하이라이트
+---
 
+## 🌟 ハイライト
 <table>
   <tr>
-    <th style="text-align:center">인벤토리</th>
-    <th style="text-align:center">몬스터 박스</th>
-  </tr>
-  <tr>
     <td style="text-align:center">
-      <img src="https://github.com/user-attachments/assets/7ea1ddb4-0965-4105-9828-984f4c3d8c2a" width="400" height="300">
+      <img src="<!-- UI or Combat Image URL -->" width="400" height="300">
     </td>
     <td style="text-align:center">
-      <img src="https://github.com/user-attachments/assets/cda8c229-92f3-4052-a3a0-d81717911e95" width="400" height="300">
-    </td>
-  </tr>
-  <tr>
-    <th style="text-align:center">아이템 박스</th>
-    <th style="text-align:center">맵툴</th>
-  </tr>
-  <tr>
-    <td style="text-align:center">
-      <img src="https://github.com/user-attachments/assets/2136b6d7-7c41-4c89-9cc6-dc24a8a0a04f" width="400" height="300">
-    </td>
-    <td style="text-align:center">
-      <img src="https://github.com/user-attachments/assets/05c23aa8-aff3-450b-98fb-9cba7951aa53" width="400" height="300">
+      <img src="<!-- AI or Animation Image URL -->" width="400" height="300">
     </td>
   </tr>
 </table>
 
 <br>
 
-## 🔗 링크
-- [포트폴리오 영상](https://youtu.be/ivREuYYGLYA)
+## 🔗 リンク
+- [プレイ動画](https://youtu.be/Bd5a8q8uKjs)
 
 <br>
 
-## 📜 프로젝트 개요
-- **기간**: `2024.03.18 ~ 2024.05.24`
-- **인원**: `5명`
-- **역할**: `맵`, `인벤토리 시스템`, `인벤토리 UI`
+## 📜 プロジェクト概要
+- **開発期間**：`2025.08.01 ~ 開発中`
+- **開発人数**：`1名（個人開発）`
+- **使用エンジン**：`Unreal Engine 5.5`
+- **担当領域**：`UI`, `アニメーション`, `AI`, `入力システム`, `データ管理`
 
 <br>
 
-## ⚙️ 개발 환경
-- **개발 언어**: `C++`, `HLSL`
-- **개발 툴**: `Visual Studio 2022` 
-- **버전 관리 및 협업 도구**: `Git`, `GitHub`
-- **렌더링 API**: `Direct3D 11`
+## ⚙️ 開発環境
+- **使用言語**：`C++17`, `Unreal Blueprint`
+- **開発ツール**：`Visual Studio 2022`
+- **エンジン**：`Unreal Engine 5.5`
 
 <br>
 
-## ⚒️ 구현 사항
-- **맵툴**: `맵툴을 효율적으로 다양한 위젯을 배치하고 각종 기능을 구현했습니다.`
-- **픽셀 피킹**: `오브젝트 수와 관계없이 항상 일정한 속도로 월드 좌표를 얻어 원하는 위치에 오브젝트를 배치할 수 있도록 구현했습니다.`
-- **인벤토리 시스템**: `인벤토리는 플레이어가 소유하는 방식이 아닌, 독립적인 시스템 클래스로 UI와 함께 아이템을 관리하고 보관했습니다.`
+## ⚒️ 実装内容
+- **UI システム**  
+  プレイヤーおよびモンスターの HP / MP 表示、戦闘状況に応じた HUD 切り替え、  
+  デリゲートとインターフェースを用いた疎結合な UI 構造を設計・実装。
 
+- **アニメーションシステム**  
+  Animation Montage を用いたコンボ攻撃、Anim Notify による攻撃判定制御、  
+  BlendSpace・State Machine を活用した滑らかな移動表現を実装。
+
+- **AI システム**  
+  Behavior Tree / Blackboard を用いた巡回・追跡・攻撃 AI を構築し、  
+  デコレータとタスクによる行動分岐を設計。
+
+- **入力システム**  
+  Enhanced Input を利用し、アクション・移動・視点切り替えを柔軟に制御。
+
+- **データテーブル管理**  
+  CSV ベースの DataTable を用いたステータス管理構造を設計し、  
+  レベル依存データをコードから分離。
+
+<br>
+
+## ⚠️ 注意事項
+- 本プロジェクトは **学習および技術検証を目的とした個人開発** です。
+- 使用しているアセットはすべて**個人利用およびポートフォリオ用途での使用が許可された無料アセット**のみを使用しています。
+- 外部提出用の動画およびドキュメントには、**著作権上の問題が生じる可能性のある要素は含まれていません。**
